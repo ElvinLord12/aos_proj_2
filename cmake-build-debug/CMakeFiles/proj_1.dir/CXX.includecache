@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mrue/aos/proj_1/RBTree.h
+
+/home/mrue/aos/proj_1/SplayTree.h
+
+/home/mrue/aos/proj_1/main.cpp
+bits/stdc++.h
+-
+RBTree.h
+/home/mrue/aos/proj_1/RBTree.h
+SplayTree.h
+/home/mrue/aos/proj_1/SplayTree.h
+iostream
+-
+fstream
+-
+iterator
+-
+ctime
+-
+chrono
+-
+

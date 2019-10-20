@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/proj_1.dir/main.cpp.o CMakeFiles/proj_1.dir/RBTree.cpp.o CMakeFiles/proj_1.dir/SplayTree.cpp.o  -o proj_1 
