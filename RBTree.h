@@ -9,11 +9,11 @@ enum Color {RED, BLACK, DOUBLE_BLACK};
 
 struct Node
 {
-    int data;
+    std::string data;
     int color;
     Node *left, *right, *parent;
 
-    explicit Node(int);
+    explicit Node(std::string);
 };
 
 class RBTree
@@ -32,12 +32,12 @@ class RBTree
         Node *minValueNode(Node *&);
         Node *maxValueNode(Node *&);
         Node* insertBST(Node *&, Node *&);
-        Node* deleteBST(Node *&, int);
+        Node* deleteBST(Node *&, std::string);
         int getBlackHeight(Node *);
     public:
         RBTree();
-        void insertValue(int);
-        void deleteValue(int);
+        void insertValue(std::string);
+        void deleteValue(std::string);
         void merge(RBTree);
         void inorder();
         void preorder();

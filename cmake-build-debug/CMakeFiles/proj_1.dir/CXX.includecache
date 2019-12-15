@@ -6,17 +6,37 @@
 
 #IncludeRegexTransform: 
 
-/home/mrue/aos/proj_1/RBTree.h
+/home/mrue/aos/proj_2/HashTable.cpp
+iostream
+-
+cstdlib
+-
+string
+-
+cstdio
+-
 
-/home/mrue/aos/proj_1/SplayTree.h
+/home/mrue/aos/proj_2/RBTree.h
 
-/home/mrue/aos/proj_1/main.cpp
+/home/mrue/aos/proj_2/SplayTree.h
+
+/home/mrue/aos/proj_2/Tries.cpp
+iostream
+-
+
+/home/mrue/aos/proj_2/main.cpp
 bits/stdc++.h
 -
 RBTree.h
-/home/mrue/aos/proj_1/RBTree.h
+/home/mrue/aos/proj_2/RBTree.h
 SplayTree.h
-/home/mrue/aos/proj_1/SplayTree.h
+/home/mrue/aos/proj_2/SplayTree.h
+Tries.cpp
+/home/mrue/aos/proj_2/Tries.cpp
+HashTable.cpp
+/home/mrue/aos/proj_2/HashTable.cpp
+unordered_map
+-
 iostream
 -
 fstream
@@ -26,5 +46,7 @@ iterator
 ctime
 -
 chrono
+-
+string
 -
 

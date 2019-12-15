@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mrue/aos/proj_1/RBTree.cpp" "/home/mrue/aos/proj_1/cmake-build-debug/CMakeFiles/proj_1.dir/RBTree.cpp.o"
-  "/home/mrue/aos/proj_1/SplayTree.cpp" "/home/mrue/aos/proj_1/cmake-build-debug/CMakeFiles/proj_1.dir/SplayTree.cpp.o"
-  "/home/mrue/aos/proj_1/main.cpp" "/home/mrue/aos/proj_1/cmake-build-debug/CMakeFiles/proj_1.dir/main.cpp.o"
+  "/home/mrue/aos/proj_2/RBTree.cpp" "/home/mrue/aos/proj_2/cmake-build-debug/CMakeFiles/proj_1.dir/RBTree.cpp.o"
+  "/home/mrue/aos/proj_2/SplayTree.cpp" "/home/mrue/aos/proj_2/cmake-build-debug/CMakeFiles/proj_1.dir/SplayTree.cpp.o"
+  "/home/mrue/aos/proj_2/main.cpp" "/home/mrue/aos/proj_2/cmake-build-debug/CMakeFiles/proj_1.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

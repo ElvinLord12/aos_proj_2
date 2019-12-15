@@ -7,7 +7,9 @@ CMakeFiles/proj_1.dir/RBTree.cpp.o: ../RBTree.h
 CMakeFiles/proj_1.dir/SplayTree.cpp.o: ../SplayTree.cpp
 CMakeFiles/proj_1.dir/SplayTree.cpp.o: ../SplayTree.h
 
+CMakeFiles/proj_1.dir/main.cpp.o: ../HashTable.cpp
 CMakeFiles/proj_1.dir/main.cpp.o: ../RBTree.h
 CMakeFiles/proj_1.dir/main.cpp.o: ../SplayTree.h
+CMakeFiles/proj_1.dir/main.cpp.o: ../Tries.cpp
 CMakeFiles/proj_1.dir/main.cpp.o: ../main.cpp
 

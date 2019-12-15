@@ -7,12 +7,12 @@
 
 struct TreeNode
 {
-    int key;
+    std::string key;
     TreeNode* parent;
     TreeNode* left;
     TreeNode* right;
 
-    TreeNode(int key)
+    TreeNode(std::string key)
     {
         this -> key = key;
         this -> parent = NULL;
@@ -34,9 +34,9 @@ class SplayTree
 public:
     SplayTree();
     SplayTree(TreeNode*);
-    TreeNode* find(int);
-    void insert(int);
-    void Delete(int);
+    TreeNode* find(std::string);
+    void insert(std::string);
+    void Delete(std::string);
     void inOrderPrint(bool);
 };
 

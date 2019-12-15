@@ -200,7 +200,7 @@ SplayTree::SplayTree(TreeNode *rt)
     this -> root = rt;
 }
 
-TreeNode* SplayTree::find(int x)
+TreeNode* SplayTree::find(string x)
 {
     TreeNode *ret = NULL;
     TreeNode *curr = this -> root;
@@ -221,7 +221,7 @@ TreeNode* SplayTree::find(int x)
     return ret;
 }
 
-void SplayTree::insert(int x)
+void SplayTree::insert(string x)
 {
     if (root == NULL)
     {
@@ -277,7 +277,7 @@ TreeNode* subtree_min(TreeNode *subRoot)
     return curr;
 }
 
-void SplayTree::Delete(int x)
+void SplayTree::Delete(string x)
 {
     TreeNode *del = find(x);
     if (del == NULL)
