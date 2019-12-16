@@ -37,6 +37,14 @@ HashTable.cpp
 /home/mrue/aos/proj_2/HashTable.cpp
 unordered_map
 -
+vector
+-
+utility
+-
+stdexcept
+-
+sstream
+-
 iostream
 -
 fstream

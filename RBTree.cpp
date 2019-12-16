@@ -314,6 +314,12 @@ int RBTree::getBlackHeight(Node *node) {
     return blackheight;
 }
 
+string RBTree::find(string data){
+    Node *node = deleteBST(root, data);
+    string dataz = node->data;
+    return dataz;
+}
+
 // Test case 1 : 5 2 9 1 6 8 0 20 30 35 40 50 0
 // Test case 2 : 3 0 5 0
 // Test case 3 : 2 1 3 0 8 9 4 5 0

@@ -36,6 +36,7 @@ class RBTree
         int getBlackHeight(Node *);
     public:
         RBTree();
+        std::string find(std::string);
         void insertValue(std::string);
         void deleteValue(std::string);
         void merge(RBTree);
