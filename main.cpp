@@ -79,7 +79,7 @@ int lineCount(string &fileName)
     return numLines;
 }
 
-RBTree * load_rb(vector<string> list){
+auto load_rb(vector<string> list){
     RBTree * rbTree = new RBTree();
     auto start = chrono::high_resolution_clock::now();
     for( int i = 0; i<list.size(); i++){
@@ -90,11 +90,11 @@ RBTree * load_rb(vector<string> list){
     auto dur = end - start;
     auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(dur).count();
 
-    std::cout << ms << std::endl;
-    return rbTree;
+//    std::cout << ms << std::endl;
+    return ms;
 }
 
-SplayTree * load_splay(vector<string> list){
+auto load_splay(vector<string> list){
     SplayTree * splayTree = new SplayTree();
     auto start = chrono::high_resolution_clock::now();
     for( int i = 0; i<list.size(); i++){
@@ -103,12 +103,12 @@ SplayTree * load_splay(vector<string> list){
     auto end = chrono::high_resolution_clock::now();
     auto dur = end - start;
     auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(dur).count();
-
-    std::cout << ms << std::endl;
-    return splayTree;
+//
+//    std::cout << ms << std::endl;
+    return ms;
 }
 
-Trie * load_trie(vector<string> list){
+auto load_trie(vector<string> list){
     Trie * trie = new Trie();
     auto start = chrono::high_resolution_clock::now();
     for( int i = 0; i<list.size(); i++){
@@ -118,9 +118,9 @@ Trie * load_trie(vector<string> list){
     auto dur = end - start;
     auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(dur).count();
 
-    std::cout << ms << std::endl;
+//    std::cout << ms << std::endl;
 
-    return trie;
+    return ms;
 }
 
 auto load_hashmap(vector<string> list){
@@ -133,9 +133,9 @@ auto load_hashmap(vector<string> list){
     auto dur = end - start;
     auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(dur).count();
 
-    std::cout << ms << std::endl;
+//    std::cout << ms << std::endl;
 
-    return hashmap;
+    return ms;
 }
 
 auto time_rb(RBTree *rbTree, string file){
@@ -233,7 +233,7 @@ int main() {
     std::cout << line_count1 << std::endl;
     std::cout << line_count2 << std::endl;
 
-    vector<string> siteList = loadFileToArray(path, 10000);
+    vector<string> siteList = loadFileToArray(path1, 700000);
 
 //    for( int i = 0; i<siteList.size(); i++){
 //        std::cout << siteList[i] << std::endl;
@@ -241,32 +241,44 @@ int main() {
 
     std::cout << "--RB Tree--" << std::endl;
 
+    int total = 0;
+
 for(int i = 0; i< 10; i++){
-    RBTree * rbTree = load_rb(siteList);
+    total += load_rb(siteList);
 }
+
+cout << total/10 << std::endl;
 
     std::cout << "--Splays--" << std::endl;
 
+total = 0;
+
 for(int x = 0; x< 10; x++){
-    SplayTree * splayTree = load_splay(siteList);
-    free(splayTree);
+    total += load_splay(siteList);
 }
 
+    cout << total/10 << std::endl;
 
+total = 0;
 
 std::cout << "--Hashmap--" << std::endl;
 
 for(int t = 0; t< 10; t++){
-    unordered_map<string, string> hashmap = load_hashmap(siteList);
+    total += load_hashmap(siteList);
 }
+
+    cout << total/10 << std::endl;
 
 std::cout << "--Tries--" << std::endl;
 
-for(int r = 0; r < 10; r++){
-    Trie * trie = new Trie();
-    trie = load_trie(siteList);
-    free(trie);
-    }
+total = 0;
+
+//for(int r = 0; r < 10; r++){
+//    total = load_trie(siteList);
+//    }
+total = load_trie(siteList);
+
+    cout << total << std::endl;
 
 
 
